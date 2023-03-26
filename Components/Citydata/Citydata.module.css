@@ -1,0 +1,121 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+.citydata{
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.otherdata{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: rgb(169, 251, 224);
+border-radius: 20px;
+    margin-top:30px ;
+    margin-bottom:20px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.time{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.main_time{
+    font-size: 20px;
+    font-weight: 800;
+}
+.time div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_data{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.sun{
+    font-size: 20px;
+}
+.sun div{
+    margin: 10px;
+    padding: 3px;
+}
+.citydata_foot{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#img{
+    width: 200px;
+}
+#temp_main{
+font-size: 5rem;
+
+
+}
+.img_main{
+    position: relative;
+}
+.cloud{
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 65px;
+    
+
+}
+.citydata_foot{
+    opacity: 0.7;
+    font-size: 22px;
+}
+.cityname{
+    font-size: 3rem;
+}
+
+@media only screen and (max-width:1000px){
+    .citydata{
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:790px){
+    .citydata_foot,.sun{
+        display: none;
+    }
+
+}
+@media only screen and (max-width:600px){
+    #img{
+        width: 100px;
+    }
+   #temp_main{
+    font-size: 3rem;
+   } 
+   .cloud{
+    bottom: 2px;
+    left: 23px;
+   }
+   .time{
+    width: 400px;
+   }
+   .cityname{
+    font-size: 40px;
+   }
+   .main_data{
+    font-size: 15px;
+   }
+   .main_data{
+    font-size: 15px;
+   }
+}

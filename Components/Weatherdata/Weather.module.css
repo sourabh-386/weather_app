@@ -1,0 +1,66 @@
+.weather{
+    /* height: 200px; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    
+}
+.child{
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 210px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: all .4s ease;
+    z-index: 2;
+
+}
+.child:hover{
+    transform: translate3D(0,-1px,0) scale(1.1);
+    transition: all .4s ease;
+    cursor: pointer;
+    /* opacity: 1; */
+}
+.child h2{
+    opacity: 0.7;
+}
+.child p{
+    opacity: 0.7;
+
+}
+@media only screen and (max-width:1000px){
+    .weather{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    .child{
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+        width: 80px;
+        margin: 5px;
+        height: 150px;
+    }
+    .child h2{
+        font-size: 20px;
+    }
+    .child p{
+        font-size: 12px;
+    }
+    .child img{
+        width: 80px;
+    }
+  
+}
