@@ -1,12 +1,10 @@
 
 
-console.log('featching is rundered outside')
 
 
 
 
 let Forcast = async (city) => {
-    console.log('featching is rundered inside')
 
 
     try {
@@ -19,13 +17,12 @@ let Forcast = async (city) => {
         const { id } = city_api_response
 
         // this api give us hourly  weather data
-        let weather_api = await fetch(`http://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=d7325e8f168c7e0cb87805d65153d4a2`)
+        let weather_api = await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${id}&appid=d7325e8f168c7e0cb87805d65153d4a2`)
 
         let weather_api_response = await weather_api.json();
 
         const { list } = weather_api_response
 
-        console.log(weather_api_response)
 
         let hourly_data = []
 
@@ -43,7 +40,6 @@ let Forcast = async (city) => {
                 icon: icon,
                 time:dt
             }
-            console.log(hourly_Forcast.time)
             hourly_data = [...hourly_data, hourly_Forcast]
         }
 
